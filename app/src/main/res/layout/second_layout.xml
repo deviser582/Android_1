@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="@string/back"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/enroll1"
+        android:theme="@style/color_user_name"
+        android:text="@string/enroll1"
+        android:textSize="35dp"
+        android:layout_toRightOf="@+id/button_3"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/account_number"
+        android:theme="@style/color_user_name"
+        android:layout_below="@+id/enroll1"
+        android:layout_marginTop="80dp"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@mipmap/user"
+        android:hint="@string/user_name"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/password1"
+        android:theme="@style/color_user_name"
+        android:layout_below="@+id/account_number"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@mipmap/password"
+        android:hint="@string/passwoed"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/sure_password"
+        android:theme="@style/color_user_name"
+        android:layout_below="@id/password1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@mipmap/password"
+        android:hint="@string/sure_password"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/enroll2"
+        android:text="@string/register"
+        android:background="@color/color_enroll"
+        android:layout_below="@+id/sure_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        />
+
+</RelativeLayout>

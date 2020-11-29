@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="@string/title"
+        android:textSize="50dp"
+        android:textColor="@color/color_title"
+        android:layout_marginTop="50dp"
+        android:theme="@style/color_user_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome"
+        android:text="@string/welcome"
+        android:textSize="20dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="25dp"
+        android:theme="@style/color_user_name"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/user_name"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="25dp"
+        android:theme="@style/color_user_name"
+        android:drawableLeft="@mipmap/user"
+        android:hint="@string/user_name"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/user_name"
+        android:theme="@style/color_user_name"
+        android:inputType="textPassword"
+        android:drawableLeft="@mipmap/password"
+        android:hint="@string/passwoed"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_1"
+        android:text="@string/register"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_enroll"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_2"
+        android:text="@string/enroll"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/button_1"
+        android:layout_marginTop="5dp"
+        android:theme="@style/color_user_name"
+        />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/weibo"
+        android:layout_toLeftOf="@+id/button_2"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/weibo"
+        />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:id="@+id/weibo1"
+        android:text="@string/weibo1"
+        android:textSize="18dp"
+        android:layout_toLeftOf="@+id/button_2"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/wechat"
+        android:layout_toRightOf="@+id/button_2"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/wechat"
+        />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:id="@+id/wechat1"
+        android:textSize="18dp"
+        android:text="@string/wechat1"
+        android:layout_toRightOf="@+id/button_2"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
